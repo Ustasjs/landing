@@ -1,0 +1,44 @@
+
+.main-section_bullets {
+  background-image: url(../img/bg/bullets-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section__heading {
+  @include heading-text($black);
+  text-align: center;
+}
+
+.benefits__list {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.benefits__item {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits__heading {
+    font: {
+    family: Lifehack, Arial, sans-serif;
+    weight: 500;
+    size: 24px;
+    }
+  color: $black;
+}
+
+.benefits__heading, .benefits__text {
+  text-align: center;
+}

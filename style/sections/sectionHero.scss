@@ -1,0 +1,48 @@
+
+.main-section_hero {
+  background-image: url(../img/bg/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main__img {
+  width: 455px;
+}
+
+.main-heading {
+    font: {
+    family: Lifehack, Arial, sans-serif;
+    weight: 500;
+    size: 65px;
+    }
+  color: $white;
+  margin-left: 15px;
+}
+
+.main-heading__head {
+  @include heading-text($yellow);
+}
+
+.main-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-btn {
+  width: 130px;
+  height: 15px;
+  background-image: url(../img/icons/arrow-scroll.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 40px;
+}

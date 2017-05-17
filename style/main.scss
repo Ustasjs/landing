@@ -1,0 +1,36 @@
+//settings vars
+
+$container-width: 940px;
+
+//mixins
+
+@mixin heading-text($color) {
+  font: {
+    family: Gagalin, Arial, sans-serif;
+    weight: 400;
+    size: 72px;
+  }
+  color: $color;
+  text-transform: uppercase;
+}
+
+//colors
+
+$white: #ffffff;
+$yellow: #f9b43b;
+$black: #2f3234;
+
+@import 'layout/normalize.scss';
+@import 'fonts/fonts.scss';
+@import 'layout/settings.scss';
+@import 'sections/header.scss';
+@import 'sections/sectionHero.scss';
+@import 'sections/aside.scss';
+@import 'sections/sectionBullets.scss';
+@import 'sections/sectionSlider.scss';
+@import 'sections/sectionTeam.scss';
+@import 'sections/sectionMenu.scss';
+@import 'sections/sectionFeedback.scss';
+@import 'sections/sectionForm.scss';
+@import 'sections/sectionMap.scss';
+

@@ -1,0 +1,115 @@
+.container_feedback {
+  height: 100%;
+  min-width: 940px;
+  width: 100%;
+}
+
+.feedback {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.feedback__item {
+  width: 25%;
+
+    &:hover .feedback__content {
+      visibility: visible;
+      transform: scale(1);
+    }
+}
+
+.feedback__content {
+  padding: 20px 45px;
+  background-color: rgba(20, 20, 20, 0.7);
+  height: 100%;
+  visibility: hidden;
+  transition: transform 0.3s;
+  transform: scale(0.9);
+}
+
+.feedback__heading {
+  font: {
+    family: Gagalin, Arial, sans-serif;
+    weight: 400;
+  }
+  color: $white;
+  text-transform: uppercase;
+}
+
+.feedback__text {
+  color: $white;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.feedback__btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #2f3234;
+  width: 110px;
+  height: 35px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;  
+  color: $white;
+}
+
+.feedback__item_first {
+  background-image: url(../img/bg/feedbacks/user1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__item_second {
+  background-image: url(../img/bg/feedbacks/user2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__item_third {
+  background-image: url(../img/bg/feedbacks/user3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__item_fourth {
+  background-image: url(../img/bg/feedbacks/user4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__item_fifth {
+  background-image: url(../img/bg/feedbacks/user5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__item_sixth {
+  background-image: url(../img/bg/feedbacks/user6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__item_seventh {
+  background-image: url(../img/bg/feedbacks/user7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__item_eight {
+  background-image: url(../img/bg/feedbacks/user8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

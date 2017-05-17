@@ -1,0 +1,86 @@
+.main-section_menu {
+  background-image: url(../img/bg/menu-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main-section__heading_menu {
+  color: $white;
+  position: absolute;
+  left: 95px;
+  top: 100px;
+  z-index: 2;
+}
+
+.accord {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.accord__item {
+  display: flex;
+  flex-direction: row;
+}
+
+.accord__link {
+  text-align: center;
+}
+
+.accord__link_meat{
+  background-image: url(../img/bg/menu-meat.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accord__link_veg {
+  background-image: url(../img/bg/menu-veg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accord__link_diet {
+  background-image: url(../img/bg/menu-diet.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accord__heading {
+  writing-mode: vertical-lr;
+  text-align: center;
+  height: 100%;
+  transform: rotate(180deg);
+  font: {
+    family: Gagalin, Arial, sans-serif;
+    weight: 400;
+    size: 40px;
+  }
+  color: $white;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.accord__content {
+  overflow: hidden;
+  background-color: rgb(47, 50, 52);
+  opacity: 0.93;
+  color: $white;
+  text-align: left;
+  width: 0;
+}
+
+.accord__par{
+  padding-left: 30px;
+  padding-top: 60px;
+  padding-right: 15px;
+}
+
