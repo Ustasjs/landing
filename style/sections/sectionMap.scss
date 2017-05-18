@@ -63,9 +63,9 @@
 .socials {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  width: 140px;
+  flex-grow: 1;
 }
 
 .socials__icon {
@@ -76,6 +76,7 @@
   height: 20px;
   opacity: 0.4;
   transition: all 0.2s;
+  margin-left: 20px;
 
     &:hover {
       opacity: 1;

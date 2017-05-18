@@ -149,32 +149,44 @@
               <div class="dropdown__title">состав</div>
               <table class="table">
                 <tr class="table__row">
-                  <td class="table__icon"></td>
+                  <td class="table__icon">
+                    <img src="img/icons/beef.svg" alt="table image" class="table__img">
+                  </td>
                   <td class="table__content">Говядина</td>
                   <td class="table__weight">300 г</td>
                 </tr>
                 <tr class="table__row">
-                  <td class="table__icon"></td>
+                  <td class="table__icon">
+                    <img src="img/icons/buns.svg" alt="table image" class="table__img">
+                  </td>
                   <td class="table__content">Булочки</td>
                   <td class="table__weight">100 г</td>
                 </tr>
                 <tr class="table__row">
-                  <td class="table__icon"></td>
+                  <td class="table__icon">
+                    <img src="img/icons/salad.svg" alt="table image" class="table__img">
+                  </td>
                   <td class="table__content">Зелень</td>
                   <td class="table__weight">70 г</td>
                 </tr>
                 <tr class="table__row">
-                  <td class="table__icon"></td>
+                  <td class="table__icon">
+                    <img src="img/icons/sauce.svg" alt="table image" class="table__img">
+                  </td>
                   <td class="table__content">Соус</td>
                   <td class="table__weight">150 г</td>
                 </tr>
                 <tr class="table__row">
-                  <td class="table__icon"></td>
+                  <td class="table__icon">
+                    <img src="img/icons/cucumber.svg" alt="table image" class="table__img">
+                  </td>
                   <td class="table__content">Овощи</td>
                   <td class="table__weight">200 г</td>
                 </tr>
                 <tr class="table__row">
-                  <td class="table__icon"></td>
+                  <td class="table__icon">
+                    <img src="img/icons/cheese.svg" alt="table image" class="table__img">
+                  </td>
                   <td class="table__content">Сыр</td>
                   <td class="table__weight">80 г</td>
                 </tr>
@@ -360,44 +372,46 @@
       <section class="main-section main-section_form">
       
         <div class="container">
-          <h2 class="main-section__heading">Закажите доставку</h2>
+          <h2 class="main-section__heading main-section__heading_form">Закажите доставку</h2>
                 
           <form action="#" class="delivery" method="post">
             <fieldset class="delivery__left">
-              <div class="delivery__username">
-                <label for="username" class="delivery__label">Имя</label>
-                <input type="text" class="delivery__input" id="username" name="username">
-              </div>
-              <div class="delivery__tel">
-                <label for="tel" class="delivery__label">Телефон</label>
-                <input type="text" class="delivery__input" id="tel" name="tel">
-              </div>
-              <div class="delivery__street">
-                <label for="street" class="delivery__label">Улица</label>
-                <input type="text" class="delivery__input" id="street" name="street">
-              </div>
-              <div class="delivery__house">
-                <label for="house" class="delivery__label">Дом</label>
-                <input type="text" class="delivery__input" id="house" name="house">
-              </div>
-              <div class="delivery__building">
-                <label for="building" class="delivery__label">Корпус</label>
-                <input type="text" class="delivery__input" id="building" name="building">
-              </div>
-              <div class="delivery__flat">
-                <label for="flat" class="delivery__label">Квартира</label>
-                <input type="text" class="delivery__input" id="flat" name="flat">
-              </div>
-              <div class="delivery__floor">
-                <label for="floor" class="delivery__label">Этаж</label>
-                <input type="text" class="delivery__input" id="floor" name="floor">
+              <div class="delivery_wrap">
+                <div class="delivery__username">
+                  <label for="username" class="delivery__label">Имя</label>
+                  <input type="text" class="delivery__input" id="username" name="username">
+                </div>
+                <div class="delivery__tel">
+                  <label for="tel" class="delivery__label">Телефон</label>
+                  <input type="text" class="delivery__input" id="tel" name="tel">
+                </div>
+                <div class="delivery__street">
+                  <label for="street" class="delivery__label">Улица</label>
+                  <input type="text" class="delivery__input" id="street" name="street">
+                </div>
+                <div class="delivery__house">
+                  <label for="house" class="delivery__label">Дом</label>
+                  <input type="text" class="delivery__input" id="house" name="house">
+                </div>
+                <div class="delivery__building">
+                  <label for="building" class="delivery__label">Корпус</label>
+                  <input type="text" class="delivery__input" id="building" name="building">
+                </div>
+                <div class="delivery__flat">
+                  <label for="flat" class="delivery__label">Квартира</label>
+                  <input type="text" class="delivery__input" id="flat" name="flat">
+                </div>
+                <div class="delivery__floor">
+                  <label for="floor" class="delivery__label">Этаж</label>
+                  <input type="text" class="delivery__input" id="floor" name="floor">
+                </div>
               </div>
             </fieldset>
                 
             <fieldset class="delivery_right">
               <div class="delivery__comment">
                 <label for="comment" class="delivery__label">Комментарий</label>
-                <textarea name="comment" id="comment" cols="30" rows="10" class="delivery__input"></textarea>
+                <textarea name="comment" id="comment" cols="30" rows="10" class="delivery__input delivery__input_textarea"></textarea>
               </div>
                 
               <div class="delivery__type-of-pay">

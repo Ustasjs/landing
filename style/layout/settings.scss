@@ -46,6 +46,8 @@ a {
 }
 
 .container {
-  width: $container-width;
+  min-width: $container-width;
+
 }
+
 

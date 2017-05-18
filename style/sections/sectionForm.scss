@@ -3,4 +3,108 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
+
+.main-section__heading_form {
+  color: $yellow;
+}
+
+.delivery {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+.delivery__left, .delivery_right {
+  border: none;
+  color: $white;
+  width: 460px;
+}
+
+.delivery_wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.delivery__username, .delivery__tel {
+  width: 48%;
+}
+
+.delivery__street {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.delivery__house, .delivery__building, .delivery__flat, .delivery__floor {
+  width: 21%;
+}
+
+.delivery__input {
+  width: 100%;
+  border-radius: 5px;
+  height: 35px;
+  outline: none;
+}
+
+.delivery__input_textarea {
+  height: 110px;
+  margin-bottom: 15px;
+}
+
+.delivery__type-of-pay{
+  margin-bottom: 20px;
+}
+
+.delivery__call {
+  margin-bottom: 20px;
+}
+
+.clear-button {
+  border: none;
+  background-color: transparent;
+  color: $white;
+  margin-left: 20px;
+  font-family: ubuntu, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+//modal window
+
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(46, 49, 51, 0.8);
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal__message {
+  background-color: $white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modal__content {
+  margin-bottom: 20px;
+}
+
