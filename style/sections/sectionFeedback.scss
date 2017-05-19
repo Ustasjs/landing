@@ -1,3 +1,7 @@
+.main-section_feedback{
+  position: relative;
+}
+
 .container_feedback {
   height: 100%;
   min-width: 940px;
@@ -113,3 +117,36 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+//modal window
+
+
+.modal__message_feedback {
+  width: 460px;
+  padding-top: 25px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.modal__heading {
+  font: {
+    family: Gagalin, Arial, sans-serif;
+    weight: 400;
+    size: 14px;
+  }
+  color: $black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+}
+
