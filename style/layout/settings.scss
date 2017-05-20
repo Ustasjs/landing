@@ -43,7 +43,7 @@ a {
 .main-section {
   height: 100vh;
   min-height: 650px;
-  min-width: $container-width;
+  min-width: $container-width + 20px;
 }
 
 .container {

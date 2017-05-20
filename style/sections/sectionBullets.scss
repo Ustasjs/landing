@@ -7,16 +7,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .main-section__heading {
   @include heading-text($black);
   text-align: center;
+  margin-top: 90px;
 }
 
 .benefits__list {
-  margin-top: 90px;
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,6 +31,10 @@
   align-items: center;
 }
 
+.benefits__logo {
+  margin-bottom: 25px;
+}
+
 .benefits__heading {
     font: {
     family: Lifehack, Arial, sans-serif;
@@ -37,8 +42,14 @@
     size: 24px;
     }
   color: $black;
+  margin-bottom: 10px;
+  line-height: 1.3;
 }
 
 .benefits__heading, .benefits__text {
   text-align: center;
+}
+
+.benefits__text {
+  line-height: 1.65;
 }

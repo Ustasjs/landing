@@ -28,7 +28,7 @@
   width: 460px;
 }
 
-.delivery_wrap {
+.delivery__wrap {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -55,6 +55,17 @@
   border-radius: 5px;
   height: 35px;
   outline: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: ubuntu, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: $black;
+  border: 1px solid #d1cfcb;
+}
+
+.delivery__text {
+  margin-bottom: 5px;
 }
 
 .delivery__input_textarea {
@@ -74,10 +85,11 @@
   border: none;
   background-color: transparent;
   color: $white;
-  margin-left: 20px;
+  margin-left: 10px;
   font-family: ubuntu, Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
+  padding: 10px;
 }
 
 //chekbox

@@ -6,13 +6,13 @@
   top: 10px;
 }
 
-.header, .head_wrap, .header-right, .main-nav__list {
+.header, .header__wrap, .header__right, .main-nav__list {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.head_wrap, .header-right, {
+.header__wrap, .header__right, {
   justify-content: space-between;
 }
 
@@ -53,6 +53,7 @@
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
+  font-family: ubuntu, Arial, sans-serif;
 }
 
 .order-button_header {
