@@ -457,6 +457,9 @@ a {
 .hide {
   display: none; }
 
+button {
+  cursor: pointer; }
+
 .header {
   font-weight: 500;
   font-size: 13px;
@@ -1297,7 +1300,9 @@ a {
 
 .delivery__input_textarea {
   height: 110px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 .delivery__type-of-pay {
   margin-bottom: 20px; }
