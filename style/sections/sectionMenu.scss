@@ -29,8 +29,33 @@
   flex-direction: row;
 }
 
+.accord__item_active {
+
+  .accord__heading{
+    color: $yellow;
+  }
+
+  .accord__content{
+    max-width: 540px;
+  }
+
+  .accord__link {
+    align-items: flex-end;
+  }
+
+
+  .accord__heading {
+    margin-bottom: 35px;
+  }
+}
+
+
 .accord__link {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .accord__link_meat{
@@ -56,7 +81,6 @@
 
 .accord__heading {
   writing-mode: vertical-lr;
-  height: 100%;
   transform: rotate(180deg);
   font: {
     family: Gagalin, Arial, sans-serif;
@@ -66,6 +90,7 @@
   color: $white;
   margin-left: 12px;
   margin-right: 12px;
+  display: inline-block;
 }
 
 .accord__content {
@@ -74,12 +99,14 @@
   opacity: 0.93;
   color: $white;
   text-align: left;
-  width: 0;
+  max-width: 0;
+  transition: max-width 0.4s;
 }
 
 .accord__par{
   padding-left: 30px;
   padding-top: 60px;
   padding-right: 15px;
+  width: 540px;
 }
 

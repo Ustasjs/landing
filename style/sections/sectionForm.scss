@@ -195,6 +195,7 @@
   align-items: center;
   justify-content: center;
   display: none;
+  opacity: 0;
 }
 
 .modal__message {
@@ -209,5 +210,9 @@
 
 .modal__content_form {
   margin-bottom: 20px;
+}
+
+.modal__close {
+  cursor: pointer;
 }
 

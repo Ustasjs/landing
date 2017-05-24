@@ -9,6 +9,19 @@
 .slider {
   position: relative;
   width: 100%;
+  min-height: 650px;
+  overflow: hidden;
+}
+
+.slider_images {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider__item {
@@ -17,9 +30,6 @@
   align-items: flex-end;
   justify-content: center;
   width: 940px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .slider__item_first {
@@ -28,12 +38,10 @@
 
 .slider__item_second {
   left: 100%;
-  display: none;
 }
 
 .slider__item_third {
   left: 200%;
-  display: none;
 }
 
 
