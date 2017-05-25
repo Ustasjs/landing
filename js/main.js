@@ -70,14 +70,20 @@ getModal($('.feedback__btn'), $('#closeFeedback'), $('#modalFeedback'))
       activeItem = items.filter('.active'),
       activeIndex = items.index(activeItem),
       nextItem = activeItem.next(),
-      prevItem = activeItem.prev();
+      prevItem = activeItem.prev(),
+      flag;
 
       
       function toSlide(targetItem) {
 
         var targetIndex = items.index(targetItem); 
-        if(targetIndex==(-1)) {
+        
+        if(flag && targetIndex==(-1)) {
           targetIndex = 0;
+        }
+
+        if(!flag && targetIndex==(-1)) {
+          targetIndex = 2;
         }
         sliderImages.animate({
           left: -targetIndex * 100 + '%'
@@ -93,6 +99,7 @@ getModal($('.feedback__btn'), $('#closeFeedback'), $('#modalFeedback'))
 
       nextBtn.on('click', function(e) {
         e.preventDefault();
+        flag = true;
 
         toSlide(nextItem);
         
@@ -100,6 +107,7 @@ getModal($('.feedback__btn'), $('#closeFeedback'), $('#modalFeedback'))
 
       prevBtn.on('click', function(e) {
         e.preventDefault();
+        flag = false;
 
         toSlide(prevItem);
        

@@ -6,7 +6,7 @@
   background-size: cover;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -55,5 +55,5 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 100px;
+  margin-bottom: 40px;
 }

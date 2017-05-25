@@ -30,20 +30,8 @@
   align-items: flex-end;
   justify-content: center;
   width: 940px;
+  position: relative;
 }
-
-.slider__item_first {
-  left: 0;
-}
-
-.slider__item_second {
-  left: 100%;
-}
-
-.slider__item_third {
-  left: 200%;
-}
-
 
 
 .container_slider {
