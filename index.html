@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="style/main.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <title>Бургер!</title>
 </head>
 <body>
@@ -551,19 +552,19 @@
             <div class="container">
               <h2 class="main-section__heading main-section__heading_form">Закажите доставку</h2>
                     
-              <form action="#" class="delivery" method="post">
+              <form action="/php/formHandler.php" class="delivery" method="post" enctype="multipart/form-data">
                 <fieldset class="delivery__left">
                   <div class="delivery__wrap">
                     <div class="delivery__username">
                       <label for="username" class="delivery__label">
                         <div class="delivery__text">Имя</div>
-                        <input type="text" class="delivery__input" id="username" name="username">
+                        <input type="text" class="delivery__input" id="username" name="username" required>
                       </label>
                     </div>
                     <div class="delivery__tel">
                       <label for="tel" class="delivery__label">
                         <div class="delivery__text">Телефон</div>
-                        <input type="tel" class="delivery__input" id="tel" name="tel">
+                        <input type="tel" class="delivery__input" id="tel" name="tel" required>
                       </label>
                     </div>
                     <div class="delivery__street">
@@ -636,14 +637,14 @@
                     </label>
                   </div>
                     
-                  <button name="submit" class="order-button">Заказать</button>
+                  <button name="submit" class="order-button" id="submit">Заказать</button>
                   <button type="reset" name="clear" class="clear-button">Очистить</button>
                     
                 </fieldset> 
                 
               </form>
                     
-            <div class="modal">
+            <div class="modal" id="modalForm">
                 <div class="modal__message modal__message_form">
                   <div class="modal__content modal__content_form">Сообщение отправлено</div>
                   <button class="order-button order-button_close">Закрыть</button>
@@ -657,7 +658,7 @@
           <section class="main-section main-section_map">
             
             <div class="container container_map">
-              <div class="map"></div>
+              <div class="map" id="yMap"></div>
                     
               <div class="footer__wrap">
                 <footer class="footer">
@@ -719,6 +720,8 @@
 <script src="js/inputMask.js"></script>
 
 <script src="js/main.js"></script>
+<script src="js/map.js"></script>
 <script src="js/OPS.js"></script>
+<script src="js/formHandler.js"></script>
 </body>
 </html>
