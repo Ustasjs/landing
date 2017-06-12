@@ -59,7 +59,7 @@ button {
   cursor: pointer;
 }
 
-.wrap {
+ .wrap {
   height: 100%;
   min-height: 100%;
   overflow: hidden;
@@ -74,3 +74,15 @@ button {
   min-height: 100%;
   min-height: 650px;
 }
+
+@media all and (max-width: 768px) {
+
+  .wrap {
+    position: static;
+  }
+
+  .aside {
+    display: none;
+  }
+
+} 

@@ -4,7 +4,13 @@
 
   function moveSection(sectionNum) {
 
-      if(inScroll || sectionNum == (-1)) {
+      if(window.innerWidth < 768) {
+        return;
+      }
+
+      //only for screen > 768px
+
+      if(inScroll || sectionNum == (-1) || document.body.clientWidth < 768) {
         return;
       };
 
@@ -66,6 +72,11 @@
 
   //menu
     $('.menu').on('click', function(e) {
+
+      if (document.body.clientWidth < 768) {
+        return;
+      }
+
       e.preventDefault();
        
 

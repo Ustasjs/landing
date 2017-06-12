@@ -478,6 +478,12 @@ button {
   min-height: 100%;
   min-height: 650px; }
 
+@media all and (max-width: 768px) {
+  .wrap {
+    position: static; }
+  .aside {
+    display: none; } }
+
 .header {
   font-weight: 500;
   font-size: 13px;
@@ -546,7 +552,9 @@ button {
   font-family: ubuntu, Arial, sans-serif; }
 
 .order-button_header {
-  margin-left: 12px; }
+  margin-left: 12px;
+  text-align: center;
+  line-height: 35px; }
 
 .main-section_hero {
   background-image: url(../img/bg/hero-bg.jpg);
