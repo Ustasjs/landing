@@ -13,5 +13,5 @@
 ##### Склонируйте репозиторий и перейдите в папку проекта
 
 ```
-git clone git@github.com/Ustasjs/landing.git
+git clone git://github.com/Ustasjs/landing.git
 ```
